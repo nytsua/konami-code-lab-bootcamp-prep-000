@@ -8,7 +8,7 @@ function init() {
     const key = parseInt(e.detail || e.which);
     if (parseInt(key) === code[index]) {
       index++;
- 
+
       if (index === alphabet.length) {
         alert('Good job!');
         index = 0;
