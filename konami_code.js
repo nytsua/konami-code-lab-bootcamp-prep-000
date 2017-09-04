@@ -6,10 +6,10 @@ function init() {
 
   function checkCode(e) {
     const key = parseInt(e.detail || e.which);
-    if (parseInt(key) === code[index]) {
+    if (key === code[index]) {
       index++;
 
-      if (index === alphabet.length) {
+      if (index === code.length) {
         alert('Good job!');
         index = 0;
       }
